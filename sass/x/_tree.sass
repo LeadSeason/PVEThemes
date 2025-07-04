@@ -37,7 +37,7 @@
 			color: $accent !important
 	&.x-tree-icon-leaf.fa
 		&.fa-cube
-			color: adjust-color($accent, $lightness: -20%) !important
+			color: $overlay1 !important
 			&.running
 				color: $accent !important
 		&.fa-fw.fa-unlock
@@ -45,7 +45,7 @@
 		&.fa-desktop
 			color: $accent !important
 			&.stopped
-				color: adjust-color($accent, $lightness: -20%) !important
+				color: $overlay1 !important
 		&.fa-database
 			color: $accent !important
 		&.fa-th
@@ -54,14 +54,14 @@
 			&:before
 				color: rgba($accent, 0.6)
 			&:after
-				color: adjust-color($accent, $lightness: -20%)
+				color: $overlay1 !important
 				background: transparent
 				text-shadow: none
 		&.fa-building.online
 			&:before
 				color: $accent
 		&.fa-tags
-			color: adjust-color($accent, $lightness: -20%) !important
+			color: $overlay1 !important
 	&.lock-migrate:after
 		color: $yellow
 

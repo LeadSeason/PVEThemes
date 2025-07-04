@@ -1,13 +1,13 @@
-.x-menu-item-focus
-	background-color: adjust-color($accent, $saturation: -30%)
+.x-menu-item-focus .x-menu-item-active
+	background-color: $surface1 !important
 
 .x-menu-item
-	background: $accent
+	background: $background
 	border-style: none
 	border-width: 0
 
 .x-menu-default
-	background: $accent
+	background: $background
 	border: 1px solid $background_accent
 
 .x-menu-item-text
@@ -25,14 +25,14 @@
 		&.fa-play
 			color: $green
 		&.fa-stop, &.fa-power-off
-			color: $redlight
+			color: $maroon
 		&.fa-pause, &.fa-download
 			color: $yellow
 
 	&.fa-heartbeat, &.fa-cube, &.fa-terminal, &.fa-desktop, &.fa-trash-o
 		color: $text
 	&.fa-stop
-		color: $redlight
+		color: $maroon
 
 .x-menu-item-default.x-menu-item-separator
 	height: 0

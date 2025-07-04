@@ -1,22 +1,28 @@
+#userinfo.x-btn
+	background: $surface0 !important;
+
+#userinfo.x-btn-over
+	background: $surface1 !important;
+
 .x-btn
-	background: $accent
+	background: $surface0
 	border-width: 0
 	&.x-unselectable.x-box-item
 		&.x-toolbar-item.x-btn-default-toolbar-small
 			&.x-btn-over, &.x-btn-menu-active
-				background-color: adjust-color($accent, $saturation: -30%)
+				background-color: $surface1;
 		&.x-btn-default-small.x-btn-over
-			background-color: adjust-color($accent, $saturation: -30%)
+			background-color: $surface1;
 	&.x-btn-menu-active.x-btn-default-toolbar-small, &.x-btn.x-btn-pressed.x-btn-default-toolbar-small
-		background-color: adjust-color($accent, $saturation: -30%)
+		background-color: $surface1;
 
 .x-btn-over
 	&.x-btn-default-toolbar-small
-		background-color: adjust-color($accent, $saturation: -30%)
+		background-color: $surface1;
 
 .x-keyboard-mode .x-btn-focus, .x-btn-focus
 	&.x-btn-default-toolbar-small
-		background-color: $accent
+		background-color: $surface0
 
 .x-btn-inner
 	color: $button_text
@@ -27,7 +33,7 @@
 
 .x-btn-disabled
 	background-image: none
-	background-color: adjust-color($accent, $saturation: -40%) !important
+	background-color: adjust-color($surface0, $saturation: -40%) !important
 
 .x-btn-icon-el
 	&.x-btn-icon-el-default-toolbar-small
@@ -37,7 +43,7 @@
 			&.fa-play
 				color: $green
 			&.fa-power-off
-				color: $redlight
+				color: $red
 		&.x-btn-icon-el-default-toolbar-small.fa.fa-question-circle
 			color: $text
 	&.x-btn-icon-el-default-small.fa
